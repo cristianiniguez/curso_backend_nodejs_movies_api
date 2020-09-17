@@ -10,6 +10,14 @@ app.get('/', function (req, res) {
 app.get('/json', function (req, res) {
   res.json({ 'Hello': 'World' })
 })
+app.get('/bisiesto/:year', function (req, res) {
+  const year = parseInt(req.params.year)
+  if (!isNaN(year)) {
+    res.json({ 'Bisiesto': year % 4 === 0 })
+  } else {
+    res.send('Este no es un año')
+  }
+})
 
 app.listen(config.port, function () {
   console.log(`Listening http://localhost:${config.port}`)
