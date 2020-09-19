@@ -1,7 +1,7 @@
 {
   "name": "movies-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto del Curso de Backend con Node.js de Platzi",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env DEBUG=app:* nodemon index",
@@ -10,9 +10,15 @@
     "cover": "nyc npm run test",
     "report": "nyc report --reporter=html && start coverage/index.html"
   },
-  "keywords": [],
+  "keywords": [
+    "curso",
+    "backend",
+    "nodejs",
+    "express",
+    "Platzi"
+  ],
   "author": "cristianiniguez <felizpc1@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@hapi/boom": "^9.1.0",
     "cross-env": "^7.0.2",
@@ -51,5 +57,17 @@
       "lib",
       "utils"
     ]
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianiniguez/curso_backend_nodejs_movies_api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cristianiniguez/curso_backend_nodejs_movies_api/issues"
+  },
+  "homepage": "https://github.com/cristianiniguez/curso_backend_nodejs_movies_api#readme"
 }
